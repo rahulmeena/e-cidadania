@@ -1,62 +1,62 @@
-User manual
+User Manual
 ===========
 
 How to register
 ---------------
 
 The registry system will depend on what the administrator wants. By default
-e-cidadania allows user registration to perform some basic tasks and visit the
+e-cidadania Allows user registration to Perform Some basic tasks and visit the
 public spaces, without participating.
 
-To register in e-cidadania you must click "Login" and in the bottom you can find
+To register you in e-cidadania Must click "Login" and in the bottom you can find
 the registration link. It will ask your name, e-mail and password.
 
-How to send a proposal
+How to send a Proposal
 ----------------------
 
-Sending proposals is very easy. Enviar una propuesta es de lo más sencillo. Basta con acceder al espacio de
-participación correspondiente y hacer clic en "Añadir una propuesta" en la
-columna de la derecha.
+Sending Proposals is very easy. Submit a proposal is very simple. Just go to space
+for participation and click "Add a proposal" in the
+right column.
 
-Aparecerá un formulario sencillo que tiene varios campos:
+Displays a simple form that has several fields:
 
-Título
-    El título de la propuesta. Debe ser una síntesis concisa de la propuesta.
+Title
+    The title of the proposal. It should be a concise summary of the proposal.
     
-Descripción
-    Una descripción más extensa de la propuesta. Se pueden vincular elementos
-    externos como páginas web, imágenes, vídeos, etc.
+Description
+    A more detailed description of the proposal. You can link elements
+    external and web pages, images, videos, etc..
 
-Latitud/Longitud
-    Ahora mismo e-cidadania cuenta con un sistema básico de geoposicionamiento.
-    Si quieres situar tu propuesta en un mapa tendrás que poner las coordenadas.
+Latitude / Longitude
+    E-cidadania now has a basic set of geo.
+    If you put your proposal on a map you have to put the coordinates.
 
-Etiquetas
-    Las etiquetas identifican de forma sencilla tu propuesta, por ejemplo::
+Tags
+    Labels identify your proposal easily, for example ::
 
-        Titulo: La acera de Cobián Roffignac está rota
-        Etiquetas: acera, cobian roffignac, pontevedra, roto
+        Title: The pavement is broken Roffignac Cobián
+        Tags: curb, cobian Roffignac, Pontevedra, broken
 
-Cómo participar en un debate
+How to participate in a debate
 ----------------------------
 
-El sistema de debates es nuevo, así que procura prestar atención para no
-perderte, esto no es un foro de internet.
+The debates system is new, so try to be careful not
+miss, this is not an internet forum.
 
-Se han trasladado diversos modelos de debate presencial hasta esta
-plataforma, y uno de ellos es el que te vamos a enseñar ahora. ¡Ya
-verás qué rápido te acostumbras!
+Various models have been transferred to the classroom discussion
+platform, and one of them is going to teach you now. I
+see how quickly you get used!
 
-Cómo consultar documentos
+How to view documents
 -------------------------
 
-Basta con hacer clic en el documento que quieras leer para que comience a
-descargarse. Si el documento que quieres no figura en la columna de la derecha
-puedes darle al botón "Ver todos los documentos" y se cargará una página
-nueva que te mostrará todos los documentos que están almacenados en ese espacio.
+Just click on the document you want to read to begin
+download. If the document you want is not in the right column
+can give the button "View all documents" and loaded a page
+new that will show all documents that are stored in that space.
 
 
-Preguntas frecuentes
+FAQs
 --------------------
 
-Si tienes alguna pregunta frecuente que no está aquí por favor dínoslo!
+If you have a question which is not listed here please let us know!
