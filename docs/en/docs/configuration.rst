@@ -21,12 +21,10 @@ Database
     }
     
 First of all will be to set up the database. By default e-cidadania is set up to
-use a local SQLite3 database, which will be useful if Lo primero de todo será configurar la base de datos. Por defecto, e-cidadania
-viene configurado para utilizar una base de datos local SQLite3, que puede
-servirte para hacer pruebas si lo necesitas pero no se debe utilizar bajo ningún
-concepto en producción.
+use a local SQLite3 database, which will be useful if tested before putting the platform in production,
+but that should change as soon as you finish the tests.
 
-Un ejemplo de base de datos en un servidor compartido de DreamHost es este::
+An example of a database on DreamHost shared server is this::
 
     DATABASES = {
         'default': {
@@ -39,55 +37,89 @@ Un ejemplo de base de datos en un servidor compartido de DreamHost es este::
         }
     }
 
-Modo Debug
+Debug Mode
 ----------
 
-El modo debug viene activado por defecto y se recomienda encarecidamente
-desactivarlo para comenzar a utilizar e-cidadania en producción. Para ello
-hay que desactivarlo en el fichero `settings.py`::
+The debug mode is enabled by default and is strongly recommended
+disable to start using e-cidadania in production. For this one
+must disable it in the `settings.py`::
 
     DEBUG = False
 
-Perfiles de usuario
--------------------
+User Profile
+------------
 
-*ACCOUNT_ACTIVATION_DAYS* (número)
+*ACCOUNT_ACTIVATION_DAYS* (number)
 
-    Esta variable especifica cuándos días tiene el usuario para activar su
-    cuenta desde que recibe el correo de confirmación.
+    This variable specifies how many days does the user have to activate its
+    account from which it receives the confirmation email.
 
 *GOOGLE_MAPS_API_KEY* (hash)
 
-    Llave de la API de Google para poder utilizar la interfaz de mapas. Debes
-    crearte una propia a pesar de que e-cidadania venga con una configurada,
-    ya que sólo funcionará en el dominio que hayas especificado.
+    API key to use Google Maps interface. You
+    must create one itself though e-cidadania comes with a set,
+    because it only works in the domain that you specify.
 
-Correo electrónico
-------------------
+e-mail
+------
 
-*ADMINS* (lista)
+*ADMINS* (list)
 
-    Lista de adminsitradores y cuentas de correo para la notificación
-    de errores del servidor. Sólo funciona si DEBUG = False
+    List of administrators and email accounts for error reporting server. It only works if DEBUG = False
     
-*EMAIL_HOST* (servidor)
+*EMAIL_HOST* (server)
 
-    Servidor de correo desde el cual se enviarán los correos a los usuarios.
+    Email Server from which you send emails to users.
     
 *DEFAULT_FROM_EMAIL*
 
-    Dirección por defecto desde la que se enviarán los correos si no se especifica
-    otra.
+    Default address from which emails are sent if not specified.
 
-Idioma
-------
+Language
+--------
 
-*LANGUAGE_CODE* (código de idioma)
+*LANGUAGE_CODE* (language code)
 
-    Idioma con el cual funcionará django por defecto.
+    Language with which to run django by default.
+
+After settings.py
+-----------------
+
+After setting up e-cidadania to your taste, you have to run a series
+command so that everything is in order.
+
+* Create the BDD *
+
+To create the database with the first admin user run
+from the root of the project ::
+
+. / manage.py syncdb
+
+Create tables in the database and then ask us if we want to
+create an administrative user. Choose the option that suits us
+and continue.
+
+In principle this is enough. If for some reason you want to get September 1
+previous data, you must do so through methods that Django offers
+but that falls outside of this manual.
+
+* Collect static files *
+
+e-cidadania is configured to serve static files in both
+development and production, but in the latter have to *collect them* and
+join them into a directory.
+
+This directory is preset as "static", and static files
+e-cidadania themselves are stored in "static_files". To collect
+files you execute the command ::
+
+. / manage.py collectstatic
+
+After running it you can delete the directory * static_files * if you want, but
+recommend to keep it in case someday you need to run the server
+development.
 
 Plugins
 -------
 
-.. note:: Esta sección está sin redactar.
-
+.. note:: This section is not writing.
